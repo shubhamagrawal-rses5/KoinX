@@ -7,7 +7,7 @@ function CarouselCard({ image, title, desc }) {
     <div className="card carouselcard">
       <div className="d-flex">
         <div className="flex-shrink-0">
-          <img src="image.png" className="card-image" alt="..."></img>
+          <img src="Image.png" className="card-image" alt="..."></img>
         </div>
         <div className="flex-grow-1 ms-3 card-image-title">
           Portfolio
