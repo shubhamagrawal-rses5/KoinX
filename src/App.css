@@ -23,7 +23,6 @@ html {
   font-size: calc(10px + 1.25vmin);
   font-family: 'Inter';
   font-style: normal;
-  width: 80%;
   /* border: 3px solid red; */
 }
 
@@ -63,16 +62,16 @@ html {
 }
 
 table {
-  width: 100%;
+  width: 80% !important;
   border-collapse: collapse;
   margin: auto;
   caption-side: top;
   empty-cells: hide;
+  margin-bottom: 5rem !important;
   /* table-layout: auto; */
 }
 
 tr {
-  /* padding: auto 5rem; */
   border-bottom: 1px solid #E5E5E5 !important;
 }
 
@@ -108,8 +107,13 @@ td {
   border-top: 1px solid #E5E5E5 !important;
 }
 
-.tabletop {
+.tabletop-container {
   background-color: #F8FAFC !important;
+}
+
+.tabletop {
+  width: 80%;
+  margin: auto;
 }
 
 .table-heading {
@@ -153,22 +157,20 @@ td {
 .carousel-container {
   background-color: #F8FAFC !important;
   border: 1px solid #F8FAFC;
+  /* border: 1px solid red; */
   height: 30vh;
+  margin: auto;
 }
 
 .carousel {
-  /* display: block; */
-  background-color: #F8FAFC;
   height: 20vh;
   width: 80vw;
   margin: 8rem auto;
-  /* padding:2rem; */
   /* border: 1px solid red !important; */
 }
 
 .carouselcard {
   border: 1px solid white !important;
-  /* max-height: 18rem; */
   min-width: 50rem;
   height: 18vh !important;
   margin: auto 1rem !important;
@@ -185,7 +187,6 @@ td {
 }
 
 .card {
-  /* display: flex; */
   display: flex;
   justify-content: center;
   align-items: left;
@@ -196,7 +197,6 @@ td {
   height: 15vh;
   margin: 1rem;
   margin-left: 1rem;
-  /* width:15vw; */
   /* border: 1px solid black !important; */
 }
 
@@ -228,5 +228,4 @@ td {
   height: 0.4rem;
   margin: 0.1rem auto;
   background-color: #101010;
-  /* border-radius: 50%; */
 }

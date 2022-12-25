@@ -4,7 +4,6 @@
     background-color: white;
     margin-bottom: 2rem;
     box-shadow: 0px 1.47737px 17.7284px 4.43211px rgba(208, 214, 227, 0.3);
-    /* width: 80%; */
     margin: auto;
     /* border: 1px solid red;; */
 }
@@ -34,23 +33,16 @@
     margin-right: 2rem;
     height: 20px;
     width: 20px;
-    /* padding-right: 2rem; */
-    /* border-radius: .25rem; */
 }
 
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 1rem;
+    }
+}
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 50.5%;
-    font-family: 'Roboto', sans-serif;
-}
 
 li {
     list-style: none;
@@ -153,9 +145,3 @@ display: flex;
     background-color: #101010;
     border-radius: 0.5rem;
 } */
-
-@media only screen and (max-width: 768px) {
-    .header {
-        padding: 1rem;
-    }
-}

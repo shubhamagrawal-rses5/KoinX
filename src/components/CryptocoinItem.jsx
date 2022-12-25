@@ -81,7 +81,6 @@ function CryptocoinItem({ props }) {
         <span className="bar"></span>
       </td>
     </tr>
-    // </div>
   );
 }
 
