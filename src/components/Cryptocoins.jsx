@@ -6,7 +6,7 @@ import TableTop from "./TableTop";
 
 function Cryptocoins() {
   const [coins, setCoins] = useState([]);
-  const [pageSize, setPageSize] = useState(20);
+  const [pageSize, setPageSize] = useState(10);
   const [pageNo, setPageNo] = useState(1);
 
   const fetchData = () => {
@@ -18,11 +18,11 @@ function Cryptocoins() {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [pageSize]);
 
   return (
     <>
-      <TableTop />
+      <TableTop setPageSize={setPageSize} />
       <table className="table table-hover">
         <thead>
           <tr>

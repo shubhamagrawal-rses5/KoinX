@@ -2,17 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 
-// function percent_colour(value) {
-//   if (value >= 0) {
-//   }
-// }
-
 function CryptocoinItem({ props }) {
-  // function liked() {
-  //   var element = document.getElementById("like");
-  //   console.log("hgg");
-  //   // element.classList.toggle("liked");
-  // }
   const {
     name,
     symbol,
@@ -26,13 +16,9 @@ function CryptocoinItem({ props }) {
     total_volume,
   } = props;
   return (
-    // <div className="table-row">
     <tr>
       <td className="table-bookmark">
-        {/* <button id="like" onClick={() => liked()}> */}
         <i className="fa fa-star-o"></i>
-        {/* <span class="icon">Like</span> */}
-        {/* </button> */}
       </td>
       <td className="table-rank">{market_cap_rank}</td>
       <td className="table-name">
