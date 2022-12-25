@@ -9,6 +9,7 @@ function Navbar() {
             <img className="nav-logo-image" src="icon.png" alt="..."></img>
             <div className="nav-logo-text">Crypto Tracker</div>
           </div>
+          <img className="nav-image" src="search.png" alt="..."></img>
           <button
             className="navbar-toggler"
             type="button"
