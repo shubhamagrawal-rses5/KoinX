@@ -75,7 +75,11 @@ function CryptocoinItem({ props }) {
       <td>${Math.round(market_cap).toLocaleString("en-US")}</td>
       <td>${Math.round(total_volume).toLocaleString("en-US")}</td>
       <td>{Math.round(circulating_supply).toLocaleString("en-US")} BTC</td>
-      <td></td>
+      <td>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </td>
     </tr>
     // </div>
   );

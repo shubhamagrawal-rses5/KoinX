@@ -66,6 +66,14 @@ th{
   font-weight: 600 !important;
   text-align: right!important;
 }
+.page-link{
+  margin:.5rem;
+  border:1px solid #E5E5E5;
+  border-radius:.5rem;
+  font-size: 60%;
+  font-weight: 600 !important;
+  color:#000000!important;
+}
 .bookmark{
   color: #ABB4C2;
 }
@@ -175,4 +183,17 @@ td {
  color:black;
  font-weight: 600 !important;
  /* border: 1px solid black !important; */
+}
+
+.footer-bg{
+  background-color: white;
+}
+
+.bar {
+    display: flex;
+    width: 0.4rem;
+    height: 0.4rem;
+    margin: 0.1rem auto;
+    background-color: #101010;
+    /* border-radius: 50%; */
 }

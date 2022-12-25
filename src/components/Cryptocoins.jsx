@@ -3,6 +3,7 @@ import CryptocoinItem from "./CryptocoinItem";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import TableTop from "./TableTop";
+import Pagination from "./Pagination";
 
 function Cryptocoins() {
   const [coins, setCoins] = useState([]);
@@ -18,7 +19,7 @@ function Cryptocoins() {
 
   useEffect(() => {
     fetchData();
-  }, [pageSize]);
+  }, [pageSize, pageNo]);
 
   return (
     <>
@@ -46,6 +47,7 @@ function Cryptocoins() {
             ))}
         </tbody>
       </table>
+      <Pagination pageNo={pageNo} setPageNo={setPageNo} />
     </>
   );
 }
