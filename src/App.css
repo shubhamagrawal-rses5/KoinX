@@ -228,4 +228,44 @@ td {
   height: 0.4rem;
   margin: 0.1rem auto;
   background-color: #101010;
+
+}
+
+.mobile-popover {
+  box-sizing: border-box;
+  width: 358px;
+  height: 359px;
+  background: #FFFFFF;
+  border: 1px solid #DBDCDF;
+  border-radius: 8px;
+  margin: auto;
+  padding: 2rem;
+  font-size: 70%;
+  font-weight: 600 !important;
+}
+
+.popup-name {
+  text-align: left !important;
+  min-width: 200px !important;
+  /* border: 1px solid black; */
+}
+
+.popup-name-text {
+  display: inline;
+  color: #000000;
+  /* border: 1px solid black; */
+}
+
+.popup-name-image {
+  display: inline;
+  margin: auto;
+  margin-right: 1rem;
+  height: 20px;
+  width: 20px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+}
+
+.mobile-popover tr {
+  border-bottom: none !important;
 }

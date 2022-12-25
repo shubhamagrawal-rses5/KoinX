@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 import TableTop from "./TableTop";
 import Pagination from "./Pagination";
+import MobilePopup from "./MobilePopup";
 
 function Cryptocoins() {
   const [coins, setCoins] = useState([]);
@@ -43,7 +44,10 @@ function Cryptocoins() {
           {coins &&
             coins.length > 0 &&
             coins.map((userObj, index) => (
-              <CryptocoinItem key={userObj.market_cap_rank} props={userObj} />
+              <>
+                <CryptocoinItem key={userObj.market_cap_rank} props={userObj} />
+                {/* <MobilePopup key={userObj.market_cap_rank} props={userObj} /> */}
+              </>
             ))}
         </tbody>
       </table>
