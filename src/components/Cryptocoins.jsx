@@ -24,7 +24,7 @@ function Cryptocoins() {
     <>
       <TableTop setPageSize={setPageSize} />
       <table className="table table-hover">
-        <thead>
+        <thead className="table-header">
           <tr>
             <th></th>
             <th>#</th>

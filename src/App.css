@@ -57,7 +57,7 @@ table {
 
 tr {
   /* padding: auto 5rem; */
-  border-bottom: 2px solid #E5E5E5 !important;
+  border-bottom: 1px solid #E5E5E5 !important;
 }
 
 th{
@@ -66,13 +66,18 @@ th{
   font-weight: 600 !important;
   text-align: right!important;
 }
-
+.bookmark{
+  color: #ABB4C2;
+}
 td {
   padding: 2.5rem 2rem!important;
   text-align: right;
   font-size: 60%;
   font-weight: 600 !important;
   /* border : 1px solid red!important; */
+}
+.table-header{
+  border-top: 1px solid #E5E5E5 !important;
 }
 .tabletop{
   background-color: #F8FAFC!important;
@@ -134,7 +139,7 @@ td {
   height: 18vh!important;
   margin: auto 1rem!important;
   border-radius: 2rem !important;
-  box-shadow: 0px 1.47737px 17.7284px 4.43211px rgba(208, 214, 227, 0.3);
+  box-shadow: 2px 1.17763px 14.1316px 3.53289px rgba(208, 214, 227, 0.3);
 }
 .slick-prev:before,
 .slick-next:before {
