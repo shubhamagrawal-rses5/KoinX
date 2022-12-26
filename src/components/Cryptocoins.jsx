@@ -10,7 +10,8 @@ function Cryptocoins() {
   const [coins, setCoins] = useState([]);
   const [pageSize, setPageSize] = useState(10);
   const [pageNo, setPageNo] = useState(1);
-
+  const [popup, setPopup] = useState(false);
+  const [popupdata, setpopupdata] = useState();
   const fetchData = () => {
     let url = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&amp;order=market_cap_de sc&amp;per_page=${pageSize}&amp;page=${pageNo}&amp;sparkline=false&amp;price_change_percentage=24h%2C7d`;
     return fetch(url)
@@ -49,8 +50,18 @@ function Cryptocoins() {
                   <CryptocoinItem
                     key={userObj.market_cap_rank}
                     props={userObj}
+                    popup={popup}
+                    setPopup={setPopup}
+                    setpopupdata={setpopupdata}
                   />
-                  {/* <MobilePopup key={userObj.market_cap_rank} props={userObj} /> */}
+                  {popup && (
+                    <MobilePopup
+                      key={index}
+                      props={popupdata}
+                      popup={popup}
+                      setPopup={setPopup}
+                    />
+                  )}
                 </>
               ))}
           </tbody>

@@ -9,8 +9,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <MultiCarousel/>
-      <Cryptocoins/>
-      {/* <MobilePopup/> */}
+      <Cryptocoins/> 
     </div>
   );
 }
