@@ -3,12 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../App.css";
 
 function color(value) {
-  value = Math.round(value * 100) / 100;
   if (value >= 0) {
     let up = "▲ ";
+    value = Math.round(value * 100) / 100;
     value = up + value + "%";
   } else {
     let down = "▼ ";
+    value = Math.round(value * 100) / 100;
     value = down + -1 * value + "%";
   }
   return value;
@@ -42,7 +43,7 @@ function CryptocoinItem({ props }) {
   } = props;
   return (
     <tr>
-      <td className="table-bookmark">
+      <td className="table-bookmark table-favorite">
         <i
           className="fa fa-star-o bookmark"
           onClick={bookmark}
@@ -57,25 +58,33 @@ function CryptocoinItem({ props }) {
           <div className="table-name-text-symbol">{symbol.toUpperCase()}</div>
         </div>
       </td>
-      <td>
+      <td className="table-price">
         ${(Math.round(current_price * 100) / 100).toLocaleString("en-US")}
       </td>
       <td
+        className="table-24h"
         id="24hr"
         style={price_change_percentage_24h_in_currency >= 0 ? green : red}
       >
         {color(price_change_percentage_24h_in_currency)}
       </td>
       <td
+        className="table-7d"
         id="7hr"
         style={price_change_percentage_7d_in_currency >= 0 ? green : red}
       >
         {color(price_change_percentage_7d_in_currency)}
       </td>
-      <td>${Math.round(market_cap).toLocaleString("en-US")}</td>
-      <td>${Math.round(total_volume).toLocaleString("en-US")}</td>
-      <td>{Math.round(circulating_supply).toLocaleString("en-US")} BTC</td>
-      <td>
+      <td className="table-marketcap">
+        ${Math.round(market_cap).toLocaleString("en-US")}
+      </td>
+      <td className="table-volume">
+        ${Math.round(total_volume).toLocaleString("en-US")}
+      </td>
+      <td className="table-circulatingsupply">
+        {Math.round(circulating_supply).toLocaleString("en-US")} BTC
+      </td>
+      <td className="table-dots">
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>

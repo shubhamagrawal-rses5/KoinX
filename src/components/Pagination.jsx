@@ -3,7 +3,7 @@ import React from "react";
 function Pagination({ pageNo, setPageNo }) {
   const pageNumbers = [];
 
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 8; i++) {
     pageNumbers.push(i);
   }
 

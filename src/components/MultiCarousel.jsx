@@ -34,7 +34,7 @@ function MultiCarousel() {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 430,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -44,28 +44,30 @@ function MultiCarousel() {
     ],
   };
   return (
-    <div className="carousel-container">
-      <div className="carousel">
-        <Slider {...settings}>
-          <div>
-            <CarouselCard />
-          </div>
-          <div>
-            <CarouselCard />
-          </div>
-          <div>
-            <CarouselCard />
-          </div>
-          <div>
-            <CarouselCard />
-          </div>
-          <div>
-            <CarouselCard />
-          </div>
-          <div>
-            <CarouselCard />
-          </div>
-        </Slider>
+    <div className="carousel-outer-container">
+      <div className="carousel-container">
+        <div className="carousel">
+          <Slider {...settings}>
+            <div>
+              <CarouselCard />
+            </div>
+            <div>
+              <CarouselCard />
+            </div>
+            <div>
+              <CarouselCard />
+            </div>
+            <div>
+              <CarouselCard />
+            </div>
+            <div>
+              <CarouselCard />
+            </div>
+            <div>
+              <CarouselCard />
+            </div>
+          </Slider>
+        </div>
       </div>
     </div>
   );

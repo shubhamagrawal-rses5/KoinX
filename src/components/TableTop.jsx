@@ -12,7 +12,7 @@ function TableTop({ setPageSize }) {
         <div className="table-heading">
           Top 100 Cryptocurrencies by Market Cap
         </div>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between legends-container">
           <div className="d-flex justify-content-start ">
             <button type="button" className="btn btn-light legends">
               <i className="fa fa-star-o"></i> Favorites

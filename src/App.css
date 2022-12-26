@@ -37,7 +37,7 @@ html {
 }
 
 .legends {
-  margin: 0.5rem 1rem;
+  margin: 0 1rem 0.5rem 1rem;
   background-color: #EFF2F5 !important;
   font-size: 1.5rem !important;
   font-weight: 700 !important;
@@ -61,11 +61,16 @@ html {
   margin: 0.5rem;
 }
 
-table {
+.table-container {
+  width: 100%;
+  overflow: scroll;
+}
+
+.table {
   width: 80% !important;
+  overflow: scroll;
   border-collapse: collapse;
   margin: auto;
-  caption-side: top;
   empty-cells: hide;
   margin-bottom: 5rem !important;
   /* table-layout: auto; */
@@ -85,7 +90,7 @@ th {
 .page-link {
   margin: .5rem;
   border: 1px solid #E5E5E5;
-  border-radius: .5rem;
+  border-radius: 1rem;
   font-size: 60%;
   font-weight: 600 !important;
   color: #000000 !important;
@@ -108,7 +113,9 @@ td {
 }
 
 .tabletop-container {
+  /* border: 1px solid red !important; */
   background-color: #F8FAFC !important;
+  /* width: 80%; */
 }
 
 .tabletop {
@@ -117,6 +124,7 @@ td {
 }
 
 .table-heading {
+  font-size: 3rem;
   text-align: left;
   font-weight: 800 !important;
   margin: 0 0 3rem;
@@ -128,7 +136,7 @@ td {
 
 .table-name {
   text-align: left !important;
-  min-width: 200px !important;
+  min-width: 150px !important;
   /* border: 1px solid black; */
 }
 
@@ -154,25 +162,30 @@ td {
   border-radius: 50%;
 }
 
-.carousel-container {
+.carousel-outer-container {
   background-color: #F8FAFC !important;
+  /* border: 1px solid red; */
+  width: 100vw;
+}
+
+.carousel-container {
   border: 1px solid #F8FAFC;
   /* border: 1px solid red; */
-  height: 30vh;
+  height: 30%;
+  width: 80%;
   margin: auto;
 }
 
 .carousel {
-  height: 20vh;
-  width: 80vw;
+  height: 20%;
   margin: 8rem auto;
-  /* border: 1px solid red !important; */
+  /* border: 1px solid blue !important; */
 }
 
 .carouselcard {
   border: 1px solid white !important;
   min-width: 50rem;
-  height: 18vh !important;
+  height: 18% !important;
   margin: auto 1rem !important;
   border-radius: 2rem !important;
   box-shadow: 2px 1.17763px 14.1316px 3.53289px rgba(208, 214, 227, 0.3);
@@ -194,7 +207,7 @@ td {
 }
 
 .card-image {
-  height: 15vh;
+  height: 15%;
   margin: 1rem;
   margin-left: 1rem;
   /* border: 1px solid black !important; */
@@ -208,6 +221,7 @@ td {
   font-weight: 600 !important;
   /* border: 1px solid black !important; */
 }
+
 
 .card-image-desc {
   text-align: left;
@@ -268,4 +282,52 @@ td {
 
 .mobile-popover tr {
   border-bottom: none !important;
+}
+
+
+
+@media only screen and (max-width: 430px) {
+  .carousel-conatiner {
+    width: 100%;
+    margin: auto;
+  }
+
+  .tabletop {
+    width: 90%
+  }
+
+  .legends {
+    display: none !important;
+  }
+
+  .legends-container {
+    margin-top: -5rem !important;
+  }
+
+  .footer-bg {
+    width: 100%;
+  }
+
+  .pagination {
+    margin: auto;
+    display: inline-flex !important;
+  }
+
+  .table-name {
+    max-width: 100px !important;
+  }
+
+  .table-24h {
+    min-width: 70px !important;
+  }
+
+  .table-rank,
+  .table-7d,
+  .table-marketcap,
+  .table-volume,
+  .table-circulatingsupply,
+  .table-dots {
+    display: none !important;
+  }
+
 }

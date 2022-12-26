@@ -25,32 +25,37 @@ function Cryptocoins() {
   return (
     <>
       <TableTop setPageSize={setPageSize} />
-      <table className="table table-hover">
-        <thead className="table-header">
-          <tr>
-            <th></th>
-            <th>#</th>
-            <th className="table-name">Name</th>
-            <th>Price</th>
-            <th>24H</th>
-            <th>7D</th>
-            <th>MARKET CAP</th>
-            <th>VOLUME(24H)</th>
-            <th>CIRCULATING SUPPLY</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {coins &&
-            coins.length > 0 &&
-            coins.map((userObj, index) => (
-              <>
-                <CryptocoinItem key={userObj.market_cap_rank} props={userObj} />
-                {/* <MobilePopup key={userObj.market_cap_rank} props={userObj} /> */}
-              </>
-            ))}
-        </tbody>
-      </table>
+      <div className="table-container">
+        <table className="table table-hover">
+          <thead className="table-header">
+            <tr>
+              <th className="table-favorite"></th>
+              <th className="table-rank">#</th>
+              <th className="table-name">Name</th>
+              <th className="table-price">Price</th>
+              <th className="table-24h">24H</th>
+              <th className="table-7d">7D</th>
+              <th className="table-marketcap">MARKET CAP</th>
+              <th className="table-volume">VOLUME(24H)</th>
+              <th className="table-circulatingsupply">CIRCULATING SUPPLY</th>
+              <th className="table-dots"></th>
+            </tr>
+          </thead>
+          <tbody>
+            {coins &&
+              coins.length > 0 &&
+              coins.map((userObj, index) => (
+                <>
+                  <CryptocoinItem
+                    key={userObj.market_cap_rank}
+                    props={userObj}
+                  />
+                  {/* <MobilePopup key={userObj.market_cap_rank} props={userObj} /> */}
+                </>
+              ))}
+          </tbody>
+        </table>
+      </div>
       <Pagination pageNo={pageNo} setPageNo={setPageNo} />
     </>
   );
