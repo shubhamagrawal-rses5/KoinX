@@ -207,7 +207,7 @@ td {
 }
 
 .card-image {
-  height: 15%;
+  height: 15vh;
   margin: 1rem;
   margin-left: 1rem;
   /* border: 1px solid black !important; */
